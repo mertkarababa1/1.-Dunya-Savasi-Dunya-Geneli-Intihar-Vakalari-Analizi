@@ -45,4 +45,3 @@ Herhangi bir sorunlar karşılaşılırsa iletişim bilgilerim ;
 
 1. mertkarababa@ogrenci.beykoz.edu.tr
 2. alazkarababa@gmail.com
-3. 05552 00 22 709
