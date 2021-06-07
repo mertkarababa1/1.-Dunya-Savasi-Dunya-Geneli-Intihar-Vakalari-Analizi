@@ -1,4 +1,4 @@
-Tüm Dosyalar Proje adlı dosyanın içerisindedir.
+Tüm Dosyalar proje adlı dosyanın içerisindedir ve bu dosyayı XAMPP veya MAMP kullanmanız farketmeksiniz uygulama dosyalarının içindeki htdocs klasörüne atınız.
 
 Projede html,css, js, php uzantılı dosyalar kullanılmıştır.
 
