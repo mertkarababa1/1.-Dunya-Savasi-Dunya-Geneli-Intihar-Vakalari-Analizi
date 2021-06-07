@@ -1,0 +1,309 @@
+
+
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-size: 2000px;
+}
+
+
+:root{
+    /*renk degiskenleri*/
+    --text-wheat: #f1d6a3;
+    --text-yellow: #ffff00;
+    --text-red: #9a031e;
+    --text-darkred: #830507;
+    --text-darkyellow: #eebc34;
+    
+     
+    /*gradyan degiskenleri*/
+
+    --knime: linear-gradient(to top, #ffff00 0%, #fff 100%);
+    --k: rgb(251,232,63);
+    --k: radial-gradient(circle, rgba(251,232,63,0) 34%, rgba(252,226,70,1) 100%);
+    --s: rgb(255,6,6);
+    --s: linear-gradient(90deg, rgba(255,6,6,0.7693452380952381) 0%, rgba(249,190,0,0.9514180672268907) 22%, rgba(233,252,69,0.1923144257703081) 74%);
+
+
+}
+
+
+
+
+/* ------------GLOBAL CLASSES --------------*/
+
+a{
+ 
+    color: black;
+    text-decoration: none;
+
+}
+
+.flex-row{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+
+    list-style-type: none;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+}
+
+
+span{
+    font-size: 0.79rem;
+}
+
+.container{
+    margin: 0 4vw;;
+}
+p{
+    background: var(--s);
+}
+
+/* -----------* GLOBAL CLASSES *-------------*/
+
+
+/*---------------navigation bar----------------*/
+
+.nav{
+    background: var(--k);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 2.9s ease-in-out;
+}
+
+.nav .nav-menu{
+
+    justify-content: space-between ;
+}
+
+
+.nav .toggle-collapse{
+    position: absolute ;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-red);
+}
+
+.collapse{
+    height: 29rem;
+}
+
+.nav .nav-items{
+
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+   
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-size: 1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--text-darkred);
+}
+.nav .nav-items .nav-link:hover a{
+    color: yellow;
+}
+.nav .nav-brand a{
+    color: var(--text-darkred);
+    font-size: 3rem;/*1remdi*/
+    padding: 1rem 0;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.nav .social{
+    padding: 1.4rem 0
+}
+
+.nav .social i{
+    padding: 0.2rem;
+    color: var(--text-darkred);
+}
+.nav .social i:hover{
+    color: var(--text-darkred);
+}
+/*-------------*-navigation bar-*--------------*/
+
+
+
+
+/*---------------- MAIN CONTENT -----------------*/
+
+/*---------------- SITE TITLE -----------------*/
+main .site-title{
+   /* background: url('../assets/3.png');*/
+    background-size: cover;
+    height: 100vh;
+   /* margin-top: -20px;nav barla mesafe*/
+   display: flex;
+   justify-content: center;
+  /* background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+main .site-title .site-background{
+    padding-top: 7rem;
+    text-align: center;
+    color: var(--text-darkred);
+}
+
+main .site-title h1,h3{
+    margin: .5rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background-color: rgb(252, 185, 62);
+    color: var(--text-darkred);
+    font-size: 1.09rem;
+    cursor: pointer;/*el işareti verir*/
+}
+
+main .site-title .btn:hover{
+
+    background: var(--text-darkred);/*transparant*/
+    border: 1px solid white;
+    color: orange;
+
+}
+/*--------------*- SITE TITLE -*---------------*/
+
+
+
+/*------------sidebar-------------*/
+
+
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--s);
+}
+/*----------*-sidebar-*-----------*/
+
+
+
+
+/*--------------*- MAIN CONTENT -*---------------*/
+
+
+
+
+/*---------------- BLOG CAR -----------------*/
+main .blog{
+/*background: url('../assets/devam.jpg');*/
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+
+main .blog .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+
+}
+main .blog-content .blog-title{
+
+padding: 2rem 0;
+
+}
+
+main .blog-content .btn-blog{
+
+    padding: .7rem 2rem;
+    background-color: var(--text-wheat);
+    margin: .5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+/*-----------*- BLOG CAR -*---------------*/
+
+
+/*---------------site cont----------------*/
+
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content .post-title a{
+    font-size: 1.6rem;
+    background: var(--s);
+}
+
+.site-content > .sidebar .category-list .list-items{
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+}
+/*--------------*site cont*---------------*/
+
+/*---------------750px----------------*/
+
+@media only screen and (max-width:750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*-------------*-750px-*--------------*/

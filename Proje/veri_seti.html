@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/veri_seti.css">
+    <title>Document</title>
+    <style>
+        table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(255, 209, 110, 0.678);
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+th {
+  background: #ff9900;
+  color: #ffffff;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
+
+tr:nth-child(even) {
+  background: #fde9c4;
+}
+
+
+    </style>
+</head>
+<header>
+  <h1><a href="mertkarababa.html" >Mert<span>Karababa</span></a></h1>
+  <nav>
+      <ul>
+          <li>
+              <a href="anasayfa.html" target="_self">ANASAYFA</a>
+          </li>
+      </ul>
+  </nav>
+</header>
+<body style="background: rgb(255,58,0);
+background: radial-gradient(circle, rgba(255,58,0,1) 0%, rgba(252,224,70,1) 100%);">
+    <input type="file" id="csvFileInput" style="padding-bottom: 30px;">
+
+    <table id="csvRoot"></table>
+
+    <script src="./lib/papaparse.min.js"></script>
+    <script type="module" src="./js1/main.js"></script>
+</body>
+</html>

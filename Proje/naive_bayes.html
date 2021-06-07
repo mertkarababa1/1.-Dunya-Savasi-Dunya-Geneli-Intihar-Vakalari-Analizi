@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naive Bayes Algoritması</title>
+    <link rel="stylesheet" href="./css/naive_bayes.css">
+    <style>
+
+        .paragraf{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="background-image: url(../projects/img/assets/k.png)";>
+    <header>
+        <nav id="nav">
+
+            <h1><a href="mertkarababa.html" >Mert<span>Karababa</span></a></h1>
+                    <ul class="nav-area">
+                    <a href="anasayfa.html" target="_self">Anasayfa</a>
+                    <li><a href="http://127.0.0.1:5500/veri_seti.html">Veri Seti Yükle</a></li>
+                    <li><a href="random_forest.html">Random Forest</a></li>
+                    <li><a href="scatter.html">Scatter</a></li>
+                    <li><a href="karar_agaci.html">Karar Ağacı</a></li>
+                    </ul>
+                
+
+
+                </nav>
+
+                    <div id="content">
+    
+                        <p class="paragraf">
+                            Bayes Teoremi
+                            1812 yılında Thomas Bayes tarafından bulunan koşullu olasılık hesaplama formülüdür.Tanım : Bayes teoremi, olasılık kuramı içinde incelenen önemli bir konudur. Bu teorem bir rassal değişken için olasılık dağılımı içinde koşullu olasılıklar ile marjinal olasılıklar arasındaki ilişkiyi gösterir. ( Kaynak : Wikipedia ) 
+                           <br> P ( A | B ) = B olayı gerçekleştiğinde A olayının gerçekleşme olasılığı
+                           <br> P ( A ) = A olayının gerçekleşme olasılığı
+                           <br> P ( B | A ) = A olayı gerçekleştiğinde B olayının gerçekleşme olasılığı
+                           <br> P ( B ) = B olayının gerçekleşme olasılığı <br>
+                           Naive Bayes Classifier
+                           Naive Bayes sınıflandırıcısının temeli Bayes teoremine dayanır. lazy ( tembel ) bir öğrenme algoritmasıdır aynı zamanda dengesiz veri kümelerinde de çalışabilir. Algoritmanın çalışma şekli bir eleman için her durumun olasılığını hesaplar ve olasılık değeri en yüksek olana göre sınıflandırır. Az bir eğitim verisiyle çok başarılı işler çıkartabilir. Test kümesindeki bir değerin eğitim kümesinde gözlemlenemeyen bir değeri varsa olasılık değeri olarak 0 verir yani tahmin yapamaz. Bu durum genellikle Zero Frequency ( Sıfır Frekans ) adıyla bilinir. Bu durumu çözmek için düzeltme teknikleri kullanılabilir. En basit düzeltme tekniklerinden biri Laplace tahmini olarak bilinir.
+                           Kullanım alanlarına örnek olarak gerçek zamanlı tahmin, çok sınıflı tahmin, metin sınıflandırması, spam filtreleme, duyarlılık analizi ve öneri sistemleri verilebilir.
+                            
+                        </p>
+                        </div>
+
+
+
+
+
+
+    </header>
+
+    
+    
+</body>
+</html>

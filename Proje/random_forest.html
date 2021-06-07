@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Forest Algoritması</title>
+    <link rel="stylesheet" href="./css/random_forest.css">
+    <style>
+
+        .paragraf{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body style="background-image: url(../projects/img/assets/k.png)";>
+    <header>
+        <nav id="nav">
+
+            <h1><a href="mertkarababa.html" >Mert<span>Karababa</span></a></h1>
+                    <ul class="nav-area">
+                    <a href="anasayfa.html" target="_self">Anasayfa</a>
+                    <li><a href="http://127.0.0.1:5500/veri_seti.html">Veri Seti Yükle</a></li>
+                    <li><a href="naive_bayes.html">Naive Bayes</a></li>
+                    <li><a href="veriSeti.html">Scatter</a></li>
+                    <li><a href="karar_agaci.html">Karar Ağacı</a></li>
+                    </ul>
+
+
+
+
+                    </nav>
+
+                    <div id="content">
+    
+                        <p class="paragraf">
+
+                            <h2>Random Forest ALgoritması</h2> 
+
+                            Rastgele Orman denetimli bir öğrenme algoritmasıdır. Zaten adından da anlaşılacağı gibi, bir orman oluşturur ve bunu bir şekilde rastgele yapar. Kurduğu “orman”, çoğu zaman “bagging” yöntemiyle eğitilen karar ağaçları topluluğudur. Bagging yönteminin genel fikri, öğrenme modellerinin bir kombinasyonunun genel sonucu arttırmasıdır.
+                            
+                            Basit kelimelerle söylemek gerekirse: Rastgele orman, birden fazla karar ağacını oluşturur ve daha doğru ve istikrarlı bir tahmin elde etmek için onları birleştirir.
+                            
+                            Rastgele ormanın büyük bir avantajı, mevcut makine öğrenmesi sistemlerinin çoğunu oluşturan hem sınıflandırma hem de regresyon problemleri için kullanılabilmesidir. Sınıflandırma bazen makine öğreniminin yapı taşı olarak kabul edildiğinden, sınıflandırmada rastgele orman hakkında konuşacağım. Aşağıda rastgele bir ormanın iki ağaç gibi nasıl görüneceğini görebilirsiniz:
+                            
+                            
+                            
+                            Rastgele Orman neredeyse bir karar ağacı veya bir bagging(torbalama) sınıflandırıcısı olarak aynı hiperparametreye sahiptir. Neyse ki, bir karar ağacını bir bagging sınıflandırıcısıyla birleştirmek zorunda kalmazsınız ve sadece Rastgele Orman’ın sınıflandırıcısını kolayca kullanabilirsiniz. Daha önce söylediğim gibi, bu yöntemde Rastgele Orman regresörünü kullanarak regresyon görevleriyle de ilgilenebilirsiniz.
+                            
+                            Rastgele Orman, ağaçları büyütürken, modele ek rastgelelik katıyor. Bir düğümü parçalara ayırırken en önemli özelliği aramak yerine, rastgele bir özellik alt kümesi arasında en iyi özelliği arar. Bu, genellikle daha iyi bir modelle sonuçlanan geniş bir çeşitlilikle sonuçlanır.
+                            
+                            Bu nedenle, Rastgele Ormanda, bir düğümün bölünmesi için algoritma tarafından özelliklerin sadece rastgele bir alt kümesi dikkate alınır. Hatta mümkün olan en iyi eşikleri (normal bir karar ağacı gibi) aramak yerine, her özellik için rastgele eşikleri kullanarak ağaçları daha rastgele  yapabilirsiniz. 
+                        </p>
+                        </div>
+        
+    </header>
+
+    
+    
+</body>
+</html>
